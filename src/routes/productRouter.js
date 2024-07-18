@@ -51,7 +51,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.patch('/:id', async (req, res) => {
+router.patch('/:id', async (req, res, next) => {
   const { id } = req.params;
   const body = req.body;
   try {
